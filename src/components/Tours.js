@@ -5,8 +5,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-export default function Tours({ tours }) {
+export default function Tours({ tours, removeTour }) {
   const [readMore, setreadMore] = useState(false);
+
   return tours.map((tour) => {
     const { id, name, info, image, price } = tour;
     return (
@@ -25,6 +26,15 @@ export default function Tours({ tours }) {
               {readMore ? "Show less" : "Read more"}
             </Button>
           </Typography>
+
+          <Button
+            variant="outlined"
+            onClick={() => removeTour(id)}
+            sx={{ mt: 2 }}
+            color="error"
+          >
+            Not Interested
+          </Button>
         </CardContent>
       </Card>
     );
