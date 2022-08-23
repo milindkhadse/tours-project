@@ -17,7 +17,7 @@ export default function Tours({ tours }) {
             {name}
           </Typography>
           <Typography gutterBottom variant="h6" component="div">
-            {price}
+            ₹ {price}
           </Typography>
           <Typography variant="subtitle1" color="text.secondary">
             {readMore ? info : `${info.substring(0, 200)}...`}
