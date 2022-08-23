@@ -18,7 +18,6 @@ function App() {
       const data = await response.json();
       setLoading(false);
       setTours(data);
-      console.log(data);
     } catch (error) {
       setLoading(false);
       seterrorFlag(error);
