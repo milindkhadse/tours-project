@@ -6,6 +6,14 @@
   height: 40vmin;
   pointer-events: none;
 }
+.css-1hjguab-MuiContainer-root {
+  flex: 1;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
